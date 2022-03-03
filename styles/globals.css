@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.pe-1a::before {
+  content: attr(data-pe-1b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.pe-2a::before {
+  content: attr(data-pe-2b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.pe-3a::before {
+  content: attr(data-pe-3b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.pe-4a::before {
+  content: attr(data-pe-4b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.pe-5a::before {
+  content: attr(data-pe-5b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.pe-6a::before {
+  content: attr(data-pe-6b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.pe-1a::after {
+  content: attr(data-pe-1a);
+}
+.pe-2a::after {
+  content: attr(data-pe-2a);
+}
+.pe-3a::after {
+  content: attr(data-pe-3a);
+}
+.pe-4a::after {
+  content: attr(data-pe-4a);
+}
+.pe-5a::after {
+  content: attr(data-pe-5a);
+}
+.pe-6a::after {
+  content: attr(data-pe-6a);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
