@@ -48,7 +48,7 @@ const SecondPhase = () => {
   };
   return (
     <div className=" lg:mt-[140px] md:mt-[140px] mb-10 px-6 lg:pl-16 md:pr-24 py-12">
-      <h1 className="text-2xl">What are you interested in?</h1>
+      <h1 className="text-[1.625rem]">What are you interested in?</h1>
       <ul className="flex items-center justify-start gap-4 flex-wrap mt-7">
         {values.map((item) => (
           <li key={item}>
