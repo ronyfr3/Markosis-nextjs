@@ -2,13 +2,12 @@ import Link from "next/link";
 
 const FirstPhase = () => {
   return (
-    <div className="w-full md:w-1/2 px-6 sm:px-12 lg:px-16 xl:px-24 xxl:px-40 pt-48 pb-24">
-      <div className="max-w-xl  ">
-        <div className="appear_top-1">
-          <h1>
-            We'd love to <strong>partner with you.</strong>
-          </h1>
-        </div>
+    <div className="w-full  px-6 sm:px-12 lg:px-16 xl:px-24 xxl:px-40 pt-48 pb-24">
+      <div className="max-w-xl">
+        <h1 className="w-full text-4xl md:text-4xl lg:text-5xl leading-[1.125] mb-[2rem] text-[#76858b] font-[300]">
+          We'd love to{" "}
+          <strong className="text-black font-[300]">partner with you.</strong>
+        </h1>
 
         <div className="flex items-center mt-16 rounded-lg object-contain">
           <img
