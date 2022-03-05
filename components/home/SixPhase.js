@@ -1,4 +1,8 @@
 import React from "react";
+import Card from "./Card";
+import Video from "./Video";
+import SideVideo from "./SideVideo";
+import Button from "./Button";
 
 const SixPhase = () => {
   const [videoIndex, setVideoIndex] = React.useState(0);
@@ -42,89 +46,52 @@ const SixPhase = () => {
       <h1 className="text-[29px] font-[400] text-center mb-3 leading-[1.2] py-10">
         Stories Case Studies.
       </h1>
-      <div className="bg-black overflow-hidden relative">
-        <div className="flex">
-          {videoIndex === 0 && (
-            <video
-              className="opacity-70 object-cover w-full h-[600px]"
-              muted
-              autoPlay
-              loop
-            >
-              <source src={slides[0].src} type="video/mp4" />
-            </video>
-          )}
-          {videoIndex === 1 && (
-            <video
-              className="opacity-70 object-cover w-full h-[600px]"
-              muted
-              autoPlay
-              loop
-            >
-              <source src={slides[1].src} type="video/mp4" />
-            </video>
-          )}
-          {videoIndex === 2 && (
-            <video
-              className="opacity-70 object-cover w-full h-[600px]"
-              muted
-              autoPlay
-              loop
-            >
-              <source src={slides[2].src} type="video/mp4" />
-            </video>
-          )}
-
-          <div className="w-[330px]">
+      <div className="bg-black relative w-full h-[300px] md:h-[590px] lg:h-[590px]">
+        <div className="flex items-center justify-center w-full h-full">
+          <div className="w-[80%] h-full">
             {videoIndex === 0 && (
-              <video
-                className="opacity-70 object-cover w-full h-[600px]"
-                muted
-                loop
-              >
-                <source src={slides[1].src} type="video/mp4" />
-              </video>
+              <Video slides={slides} videoIndex={videoIndex} />
             )}
             {videoIndex === 1 && (
-              <video
-                className="opacity-70 object-cover w-full h-[600px]"
-                muted
-                loop
-              >
-                <source src={slides[2].src} type="video/mp4" />
-              </video>
+              <Video slides={slides} videoIndex={videoIndex} />
             )}
             {videoIndex === 2 && (
-              <video
-                className="opacity-70 object-cover w-full h-[600px]"
-                muted
-                loop
-              >
-                <source src={slides[0].src} type="video/mp4" />
-              </video>
+              <Video slides={slides} videoIndex={videoIndex} />
             )}
-            <button
-              onClick={changeVideo}
-              className="bg-white flex items-center rounded-[15px] py-1 px-10 text-[20px] font-[600] capitalize absolute right-10 top-10 z-50"
-            >
-              next{" "}
-              <svg
-                className="w-6 h-6 ml-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </button>
+          </div>
+          {/* sidebar */}
+          <div className="lg:w-[20%] md:w-[25%] w-[27%] hover:w-[30%] lg:hover:w-[23%] duration-300 ease-linear h-full">
+            {videoIndex === 0 && <SideVideo slides={slides} videoIndex="1" />}
+            {videoIndex === 1 && <SideVideo slides={slides} videoIndex="2" />}
+            {videoIndex === 2 && <SideVideo slides={slides} videoIndex="0" />}
+            {/* buttons */}
+            {videoIndex === 0 && (
+              <Button
+                changeVideo={changeVideo}
+                slides={slides}
+                videoIndex="1"
+              />
+            )}
+            {videoIndex === 1 && (
+              <Button
+                changeVideo={changeVideo}
+                slides={slides}
+                videoIndex="2"
+              />
+            )}
+            {videoIndex === 2 && (
+              <Button
+                changeVideo={changeVideo}
+                slides={slides}
+                videoIndex="0"
+              />
+            )}
           </div>
         </div>
+        {/* box */}
+        {videoIndex === 0 && <Card videoIndex={videoIndex} slides={slides} />}
+        {videoIndex === 1 && <Card videoIndex={videoIndex} slides={slides} />}
+        {videoIndex === 2 && <Card videoIndex={videoIndex} slides={slides} />}
       </div>
     </div>
   );

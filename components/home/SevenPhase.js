@@ -2,7 +2,7 @@ import React from "react";
 
 const SevenPhase = () => {
   return (
-    <section className="px-6 sm:px-12 lg:px-16 xl:px-24 xxl:px-40 py-16 md:py-24 xl:py-32  ">
+    <section className="px-6 sm:px-12 lg:px-16 xl:px-24 xxl:px-40 py-16 md:py-24 xl:py-32">
       <div className="max-w-xl mx-auto appear_top-1">
         <h2 className="text-[29px] font-[400] leading-[1.2] mt-0 mb-1 text-center text-black">
           The clients we work with are the reason we love what we do.

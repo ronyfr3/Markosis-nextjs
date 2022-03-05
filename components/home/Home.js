@@ -17,7 +17,9 @@ const Home = () => {
       <FourPhase />
       <FivePhase />
       <SixPhase />
-      <SevenPhase />
+      <div className="mt-60 lg:mt-0 xl:mt-0 md:mt-0 xxl:mt-0">
+        <SevenPhase />
+      </div>
     </>
   );
 };
