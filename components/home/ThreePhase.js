@@ -10,21 +10,31 @@ const ThreePhase = () => {
             What you can expect on a Stories plan.
           </h3>
           <ul className="grid grid-cols-1 circle-checkmark my-12 gap-0 ">
-            <li className="text-lg relative pl-10 mb-4 text-left">
-              Access to all services per month
-            </li>
-            <li className="text-lg relative pl-10 mb-4 text-left">
-              Monthly review report
-            </li>
-            <li className="text-lg relative pl-10 mb-4 text-left">
-              Customer focused strategy
-            </li>
-            <li className="text-lg relative pl-10 mb-4 text-left">
-              Starting at approx. 15 hours per month
-            </li>
-            <li className="text-lg relative pl-10 mb-4 text-left">
-              20% discount on all additional Think services
-            </li>
+            <li
+              className="text-lg relative pl-10 mb-4 text-left te-1a"
+              data-te-1b="✔"
+              data-te-1a="Access to all services per month"
+            ></li>
+            <li
+              className="text-lg relative pl-10 mb-4 text-left te-2a"
+              data-te-2b="✔"
+              data-te-2a="Monthly review report"
+            ></li>
+            <li
+              className="text-lg relative pl-10 mb-4 text-left te-3a"
+              data-te-3b="✔"
+              data-te-3a="Customer focused strategy"
+            ></li>
+            <li
+              className="text-lg relative pl-10 mb-4 text-left te-4a"
+              data-te-4b="✔"
+              data-te-4a="Starting at approx. 15 hours per month"
+            ></li>
+            <li
+              className="text-lg relative pl-10 mb-4 text-left te-5a"
+              data-te-5b="✔"
+              data-te-5a="20% discount on all additional Think services"
+            ></li>
           </ul>
 
           <a

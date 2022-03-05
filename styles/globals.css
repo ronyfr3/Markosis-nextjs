@@ -21,8 +21,8 @@ a {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: black;
@@ -34,8 +34,8 @@ a {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: black;
@@ -47,8 +47,8 @@ a {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: black;
@@ -60,8 +60,8 @@ a {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: black;
@@ -73,8 +73,8 @@ a {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: black;
@@ -86,8 +86,8 @@ a {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: black;
@@ -116,3 +116,85 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.te-1a::before {
+  content: attr(data-te-1b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.te-2a::before {
+  content: attr(data-te-2b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.te-3a::before {
+  content: attr(data-te-3b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.te-4a::before {
+  content: attr(data-te-4b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.te-5a::before {
+  content: attr(data-te-5b);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+
+.te-1a::after {
+  content: attr(data-te-1a);
+}
+.te-2a::after {
+  content: attr(data-te-2a);
+}
+.te-3a::after {
+  content: attr(data-te-3a);
+}
+.te-4a::after {
+  content: attr(data-te-4a);
+}
+.te-5a::after {
+  content: attr(data-te-5a);
+}

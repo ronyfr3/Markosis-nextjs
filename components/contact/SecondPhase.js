@@ -54,7 +54,8 @@ const SecondPhase = () => {
           <li key={item}>
             <div
               className={`${
-                select.options.some((v) => v === item) && "bg-black text-[#fff]"
+                select.options.some((v) => v === item) &&
+                "bg-black text-[#fffbfb]"
               } border font-[500] rounded-full border-black py-3 px-6 cursor-pointer capitalize text-sm text-[#414141]`}
               onClick={() => saveClicked(item)}
             >
