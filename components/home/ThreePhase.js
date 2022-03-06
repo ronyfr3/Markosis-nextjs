@@ -65,18 +65,6 @@ const ThreePhase = () => {
           </p>
         </div>
         <div className="text-white">
-          <h5 className="font-[500] text-lg mb-1 ">Animation</h5>
-          <p className="text-[#718096] mb-[5px] text-[14px] font-[400] leading-[1.8] mt-0 ">
-            Explainers
-          </p>
-          <p className="text-[#718096] mb-[5px] text-[14px] font-[400] leading-[1.8] mt-0 ">
-            Social Ads
-          </p>
-          <p className="text-[#718096] mb-[5px] text-[14px] font-[400] leading-[1.8] mt-0 ">
-            3D Product Promotions
-          </p>
-        </div>
-        <div className="text-white">
           <h5 className="font-[500] text-lg mb-1 ">Photography</h5>
           <p className="text-[#718096] mb-[5px] text-[14px] font-[400] leading-[1.8] mt-0 ">
             Lifestyle
