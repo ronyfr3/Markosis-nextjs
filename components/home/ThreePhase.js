@@ -45,7 +45,7 @@ const ThreePhase = () => {
           </a>
         </div>
       </div>
-      <div className=" bg-gray-900  md:mt-0 w-full lg:w-1/2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-3 gap-8 serviceSection px-4 py-16  md:py-24 flex sm:pl-6 lg:pl-8 xl:pl-12 xxl:pl-20 sm:pr-12 lg:pr-16 xl:pr-24 xxl:pr-40">
+      <div className=" bg-gray-900  md:mt-0 w-full lg:w-1/2 grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-4 gap-8 serviceSection px-4 py-16  md:py-24 flex sm:pl-6 lg:pl-8 xl:pl-12 xxl:pl-20 sm:pr-12 lg:pr-16 xl:pr-24 xxl:pr-40">
         <div className="text-white">
           <h5 className="font-[500] text-lg mb-1 ">Videography</h5>
           <p className="text-[#718096] mb-[5px] text-[14px] font-[400] leading-[1.8] mt-0 ">
