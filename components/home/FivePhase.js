@@ -3,11 +3,11 @@ const FivePhase = () => (
     <h2 className="text-[29px] font-[400] leading-[1.2] text-center  text-black mb-8">
       What's the investment?
     </h2>
-    <div className="flex lg:flex-row md:flex-row items-center justify-center flex-wrap">
+    <div className="2xl:w-[60%] xl:w-full lg:w-full md:w-full w-full flex lg:flex-row md:flex-row items-center justify-center mx-auto flex-wrap">
       {[1, 2, 3].map((item) => (
         <div
           key={item}
-          className=" w-full text-center flex flex-col  items-start max-w-xs mx-auto my-10 rounded-xl shadow-2xl"
+          className="text-center flex flex-col  items-start max-w-xs xl:w-[350px] lg:w-[300px] md:w-[300px] 2xl:w-[350px] h-full mx-auto my-10 rounded-xl shadow-2xl"
         >
           <div className="bg-black py-6 w-full text-center">
             <h3 className="text-white mb-0 font-[400] text-[1.375rem] leading-[1.4]">
