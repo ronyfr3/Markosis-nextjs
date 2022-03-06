@@ -1,6 +1,9 @@
 import React from "react";
+import Calendly from "./Calendly";
 
 const Banner = () => {
+  const [showCalendly, setShowCalendly] = React.useState(false);
+
   return (
     <div>
       <section className="relative bg-black text-left pb-0  bg-cover bg-center">
@@ -25,12 +28,12 @@ const Banner = () => {
               Let’s have a chat about the value a Stories content plan can add
               to your business.
             </p>
-            <a
+            <button
               className="bg-black rounded text-lg px-8 py-6 inline-block text-white no-underline"
-              onClick="Calendly.initPopupWidget({url: 'https://calendly.com/sam-thiele/free-consultation'});return false;"
+              onClick={() => setShowCalendly(true)}
             >
               Get Started
-            </a>
+            </button>
           </div>
         </div>
 
@@ -73,6 +76,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
+      {showCalendly && <Calendly setShowCalendly={setShowCalendly} />}
     </div>
   );
 };

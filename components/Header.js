@@ -1,8 +1,12 @@
+import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Calendly from "./Calendly";
 
 const Header = () => {
   const router = useRouter().asPath;
+
+  const [showCalendly, setShowCalendly] = React.useState(false);
 
   return (
     <header className="absolute w-full z-50 px-6 py-2 sm:px-12 lg:px-16 xl:px-24 xxl:px-40">
@@ -29,13 +33,14 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="hidden md:block h-full bg-black rounded text-lg px-4 py-2 text-white no-underline text-center mb-8 md:mb-0">
-                  <Link className="" onClick="/" href="/">
+                  <button onClick={() => setShowCalendly(true)}>
                     Get Started
-                  </Link>
+                  </button>
                 </li>
               </ul>
             </div>
           </nav>
+          {showCalendly && <Calendly setShowCalendly={setShowCalendly} />}
         </div>
       </div>
     </header>
