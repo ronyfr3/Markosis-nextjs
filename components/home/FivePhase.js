@@ -5,7 +5,10 @@ const FivePhase = () => (
     </h2>
     <div className="flex lg:flex-row md:flex-row items-center justify-center flex-wrap">
       {[1, 2, 3].map((item) => (
-        <div className=" w-full text-center flex flex-col  items-start max-w-xs mx-auto my-10 rounded-xl shadow-2xl">
+        <div
+          key={item}
+          className=" w-full text-center flex flex-col  items-start max-w-xs mx-auto my-10 rounded-xl shadow-2xl"
+        >
           <div className="bg-black py-6 w-full text-center">
             <h3 className="text-white mb-0 font-[400] text-[1.375rem] leading-[1.4]">
               {" "}
